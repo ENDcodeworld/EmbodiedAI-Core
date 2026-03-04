@@ -1,0 +1,31 @@
+# Core Dependencies
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Computer Vision
+opencv-python>=4.8.0
+pillow>=10.0.0
+
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Robotics
+pybullet>=3.2.0
+mujoco>=2.3.0
+
+# Motion Planning
+ompl>=1.6.0
+
+# Utilities
+tqdm>=4.65.0
+pyyaml>=6.0
+loguru>=0.7.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Documentation
+sphinx>=7.0.0
+sphinx-rtd-theme>=1.3.0
