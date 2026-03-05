@@ -1,0 +1,43 @@
+# MANIFEST.in for EmbodiedAI-Core
+
+# Include README and LICENSE
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+include SECURITY.md
+
+# Include configuration files
+include pyproject.toml
+include requirements.txt
+include .editorconfig
+include .pre-commit-config.yaml
+recursive-include config *.yaml *.yml *.json
+
+# Include source code
+recursive-include src *.py *.pyi
+include src/py.typed
+
+# Include documentation
+recursive-include docs *.md *.rst
+
+# Include examples
+recursive-include examples *.py
+
+# Include tests
+recursive-include tests *.py
+
+# Exclude
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__
+global-exclude *.so
+global-exclude .git
+global-exclude .github
+global-exclude *.egg-info
+global-exclude dist
+global-exclude build
+global-exclude venv
+global-exclude .venv
+global-exclude *.log

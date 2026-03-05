@@ -1,0 +1,19 @@
+# Code Owners for EmbodiedAI-Core
+# https://help.github.com/articles/about-codeowners/
+
+# Default owners for the entire repository
+* @ENDcodeworld/embodiedai-core-maintainers
+
+# Core modules
+/src/vision/ @ENDcodeworld/embodiedai-core-maintainers
+/src/control/ @ENDcodeworld/embodiedai-core-maintainers
+/src/motion/ @ENDcodeworld/embodiedai-core-maintainers
+
+# Documentation
+/docs/ @ENDcodeworld/embodiedai-core-maintainers
+*.md @ENDcodeworld/embodiedai-core-maintainers
+
+# CI/CD and configuration
+/.github/ @ENDcodeworld/embodiedai-core-maintainers
+pyproject.toml @ENDcodeworld/embodiedai-core-maintainers
+requirements.txt @ENDcodeworld/embodiedai-core-maintainers

@@ -1,7 +1,10 @@
 """
-机器人控制模块
+机器人控制模块 | Robot Control Module
+
+提供机器人运动控制、状态监测等功能。
 """
 
-class RobotController:
-    """机器人控制器基类"""
-    pass
+from embodiedai.control.robot_controller import RobotController
+from embodiedai.control.robot_config import RobotConfig
+
+__all__ = ["RobotController", "RobotConfig"]

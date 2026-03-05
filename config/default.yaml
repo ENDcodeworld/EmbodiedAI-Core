@@ -1,0 +1,50 @@
+# EmbodiedAI-Core 默认配置
+
+# 视觉系统配置
+vision:
+  camera_id: 0
+  resolution: [640, 480]
+  fps: 30
+  image_processor:
+    default_size: [224, 224]
+    normalization: true
+    normalize_mean: [0.485, 0.456, 0.406]
+    normalize_std: [0.229, 0.224, 0.225]
+
+# 机器人控制配置
+control:
+  robot_type: ur5e
+  dof: 6
+  max_payload: 3.0  # kg
+  reach: 0.8  # m
+  default_velocity: 0.5  # m/s
+  default_acceleration: 0.5  # m/s^2
+  connection:
+    host: localhost
+    port: 30003
+    timeout: 10.0
+
+# 运动规划配置
+motion:
+  planner:
+    time_limit: 5.0  # 秒
+    max_iterations: 1000
+  trajectory:
+    time_step: 0.01  # 秒
+    max_velocity: 1.0  # m/s
+    max_acceleration: 2.0  # m/s^2
+  collision_check:
+    enabled: true
+    margin: 0.05  # 米
+
+# 日志配置
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: logs/embodiedai.log
+
+# 调试配置
+debug:
+  enabled: false
+  save_images: false
+  save_trajectories: false
